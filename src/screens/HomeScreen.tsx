@@ -1,5 +1,5 @@
 import React from 'react'
-import { ActivityIndicator, Dimensions, View, FlatList, Text, ScrollView } from 'react-native'
+import { ActivityIndicator, Dimensions, View, ScrollView } from 'react-native'
 
 import Carousel from 'react-native-snap-carousel';
 
@@ -12,13 +12,13 @@ const { width: windowWidth } = Dimensions.get('window')
 
 export const HomeScreen = () => {
 
-    const { moviesNowPlaying, isLoading } = useMovies()
+    const { nowPlaying, popular, topRated, upcoming, isLoading } = useMovies()
     const { top } = useSafeAreaInsets()
 
     if (isLoading){
         return (
             <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
-                <ActivityIndicator color='red' size={ 100 } />
+                <ActivityIndicator color='grey' size={ 100 } />
             </View>
         )
     }
@@ -31,7 +31,7 @@ export const HomeScreen = () => {
             {/* Main carousel */}
             <View style={{ height: 440 }}>
                 <Carousel
-                    data={moviesNowPlaying}
+                    data={nowPlaying}
                     renderItem={( {item}: any ) => <MovieCard movie={item} />}
                     sliderWidth={ windowWidth }
                     itemWidth={ 300 }
@@ -42,8 +42,18 @@ export const HomeScreen = () => {
             {/* popular movies */}
 
             <HorizontalSlider
-                movies={moviesNowPlaying}
-                title='Popular Movies'
+                movies={popular}
+                title='Peliculas populares'
+            />
+
+            <HorizontalSlider
+                movies={topRated}
+                title='Mejor valoradas'
+            />
+
+            <HorizontalSlider
+                movies={upcoming}
+                title='Próximamente'
             />
 
 

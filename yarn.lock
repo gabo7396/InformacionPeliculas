@@ -1981,6 +1981,11 @@
   dependencies:
     "@babel/types" "^7.20.7"
 
+"@types/currency-formatter@^1.5.4":
+  "integrity" "sha512-JjRK2SQdoxvzsB8OPCLrXyfLLh31bGJt+8DLbqYs02uP/2IDtJsacvLB35DutvNkYsuQeP+Reve+xEyTl3IKTQ=="
+  "resolved" "https://registry.npmjs.org/@types/currency-formatter/-/currency-formatter-1.5.4.tgz"
+  "version" "1.5.4"
+
 "@types/graceful-fs@^4.1.3":
   "integrity" "sha512-olP3sd1qOEe5dXTSaFvQG+02VdRXcdytWLAZsAq1PecU8uqQAhkrnbli7DagjtXKW/Bl7YJbUsa8MPcuc8LHEQ=="
   "resolved" "https://registry.npmjs.org/@types/graceful-fs/-/graceful-fs-4.1.9.tgz"
@@ -2036,6 +2041,21 @@
   dependencies:
     "@types/react" "*"
     "react-native" "*"
+
+"@types/react-native-vector-icons@^6.4.18":
+  "integrity" "sha512-YGlNWb+k5laTBHd7+uZowB9DpIK3SXUneZqAiKQaj1jnJCZM0x71GDim5JCTMi4IFkhc9m8H/Gm28T5BjyivUw=="
+  "resolved" "https://registry.npmjs.org/@types/react-native-vector-icons/-/react-native-vector-icons-6.4.18.tgz"
+  "version" "6.4.18"
+  dependencies:
+    "@types/react" "*"
+    "@types/react-native" "^0.70"
+
+"@types/react-native@^0.70":
+  "integrity" "sha512-c6WbyCgWTBgKKMESj/8b4w+zWcZSsCforson7UdXtXMecG3MxCinYi6ihhrHVPyUrVzORsvEzK8zg32z4pK6Sg=="
+  "resolved" "https://registry.npmjs.org/@types/react-native/-/react-native-0.70.19.tgz"
+  "version" "0.70.19"
+  dependencies:
+    "@types/react" "*"
 
 "@types/react-test-renderer@^18.0.0":
   "integrity" "sha512-1+ANPOWc6rB3IkSnElhjv6VLlKg2dSv/OWClUyZimbLsQyBn8Js9Vtdsi3UICJ2rIQ3k2la06dkB+C92QfhKmg=="
@@ -2190,6 +2210,11 @@
   dependencies:
     "mime-types" "~2.1.34"
     "negotiator" "0.6.3"
+
+"accounting@^0.4.1":
+  "integrity" "sha512-RU6KY9Y5wllyaCNBo1W11ZOTnTHMMgOZkIwdOOs6W5ibMTp72i4xIbEA48djxVGqMNTUNbvrP/1nWg5Af5m2gQ=="
+  "resolved" "https://registry.npmjs.org/accounting/-/accounting-0.4.1.tgz"
+  "version" "0.4.1"
 
 "acorn-jsx@^5.3.2":
   "integrity" "sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ=="
@@ -2711,6 +2736,15 @@
     "strip-ansi" "^6.0.0"
     "wrap-ansi" "^6.2.0"
 
+"cliui@^7.0.2":
+  "integrity" "sha512-OcRE68cOsVMXp1Yvonl/fzkQOyjLSu/8bhPDfQt0e0/Eb283TKP20Fs2MqoPsr9SwA595rRCA+QMzYc9nBP+JQ=="
+  "resolved" "https://registry.npmjs.org/cliui/-/cliui-7.0.4.tgz"
+  "version" "7.0.4"
+  dependencies:
+    "string-width" "^4.2.0"
+    "strip-ansi" "^6.0.0"
+    "wrap-ansi" "^7.0.0"
+
 "cliui@^8.0.1":
   "integrity" "sha512-BSeNnyus75C4//NQ9gQt1/csTXyo/8Sb+afLAkzAptFuMsod9HFokGNudZpi/oQV73hnVK+sR+5PVRMd+Dr7YQ=="
   "resolved" "https://registry.npmjs.org/cliui/-/cliui-8.0.1.tgz"
@@ -2909,6 +2943,15 @@
   "integrity" "sha512-M1uQkMl8rQK/szD0LNhtqxIPLpimGm8sOBwU7lLnCpSbTyY3yeU1Vc7l4KT5zT4s/yOxHH5O7tIuuLOCnLADRw=="
   "resolved" "https://registry.npmjs.org/csstype/-/csstype-3.1.3.tgz"
   "version" "3.1.3"
+
+"currency-formatter@^1.5.9":
+  "integrity" "sha512-47reIlQZzLn+WWI8xPDCaunwLd/abGnPwAXpM8hEvjeuRB8CVa4KjkZJ4Eo0MO1OKXqeiel71O04ITz+6NMzdA=="
+  "resolved" "https://registry.npmjs.org/currency-formatter/-/currency-formatter-1.5.9.tgz"
+  "version" "1.5.9"
+  dependencies:
+    "accounting" "^0.4.1"
+    "locale-currency" "0.0.2"
+    "object-assign" "^4.1.1"
 
 "dayjs@^1.8.15":
   "integrity" "sha512-vjAczensTgRcqDERK0SR2XMwsF/tSvnvlv6VcF2GIhg6Sx4yOIt/irsr1RDJsKiIyBzJDpCoXiWWq28MqH2cnQ=="
@@ -4836,6 +4879,11 @@
   "resolved" "https://registry.npmjs.org/lines-and-columns/-/lines-and-columns-1.2.4.tgz"
   "version" "1.2.4"
 
+"locale-currency@0.0.2":
+  "integrity" "sha512-5uUCVWBhixSV9x48yONxyGaW7YNGwFqM3f0ue1V+GbcHXGfOLKP+2HrwSFxkQ59V7cgcxahkRLD2Lw/CRfBJAQ=="
+  "resolved" "https://registry.npmjs.org/locale-currency/-/locale-currency-0.0.2.tgz"
+  "version" "0.0.2"
+
 "locate-path@^3.0.0":
   "integrity" "sha512-7AO748wWnIhNqAuaty2ZWHkQHRSNfPVIsPIfwEOWO22AmaoVrWavlOcMR5nzTLNYvp36X220/maaRsrec1G65A=="
   "resolved" "https://registry.npmjs.org/locate-path/-/locate-path-3.0.0.tgz"
@@ -5795,6 +5843,14 @@
   dependencies:
     "prop-types" "^15.6.1"
     "react-addons-shallow-compare" "15.6.2"
+
+"react-native-vector-icons@^10.0.3":
+  "integrity" "sha512-ZgVlV5AdQgnPHHvBEihGf2xwyziT1acpXV1U+WfCgCv3lcEeCRsmwAsBU+kUSNsU+8TcWVsX04kdI6qUaS8D7w=="
+  "resolved" "https://registry.npmjs.org/react-native-vector-icons/-/react-native-vector-icons-10.0.3.tgz"
+  "version" "10.0.3"
+  dependencies:
+    "prop-types" "^15.7.2"
+    "yargs" "^16.1.1"
 
 "react-native@*", "react-native@>=0.57", "react-native@0.73.2":
   "integrity" "sha512-7zj9tcUYpJUBdOdXY6cM8RcXYWkyql4kMyGZflW99E5EuFPoC7Ti+ZQSl7LP9ZPzGD0vMfslwyDW0I4tPWUCFw=="
@@ -6969,6 +7025,11 @@
     "camelcase" "^5.0.0"
     "decamelize" "^1.2.0"
 
+"yargs-parser@^20.2.2":
+  "integrity" "sha512-y11nGElTIV+CT3Zv9t7VKl+Q3hTQoT9a1Qzezhhl6Rp21gJ/IVTW7Z3y9EWXhuUBC2Shnf+DX0antecpAwSP8w=="
+  "resolved" "https://registry.npmjs.org/yargs-parser/-/yargs-parser-20.2.9.tgz"
+  "version" "20.2.9"
+
 "yargs-parser@^21.1.1":
   "integrity" "sha512-tVpsJW7DdjecAiFpbIB1e3qxIQsE6NoPc5/eTdrbbIC4h0LVsWhnoa3g+m2HclBIujHzsxZ4VJVA+GUuc2/LBw=="
   "resolved" "https://registry.npmjs.org/yargs-parser/-/yargs-parser-21.1.1.tgz"
@@ -6990,6 +7051,19 @@
     "which-module" "^2.0.0"
     "y18n" "^4.0.0"
     "yargs-parser" "^18.1.2"
+
+"yargs@^16.1.1":
+  "integrity" "sha512-D1mvvtDG0L5ft/jGWkLpG1+m0eQxOfaBvTNELraWj22wSVUMWxZUvYgJYcKh6jGGIkJFhH4IZPQhR4TKpc8mBw=="
+  "resolved" "https://registry.npmjs.org/yargs/-/yargs-16.2.0.tgz"
+  "version" "16.2.0"
+  dependencies:
+    "cliui" "^7.0.2"
+    "escalade" "^3.1.1"
+    "get-caller-file" "^2.0.5"
+    "require-directory" "^2.1.1"
+    "string-width" "^4.2.0"
+    "y18n" "^5.0.5"
+    "yargs-parser" "^20.2.2"
 
 "yargs@^17.3.1", "yargs@^17.6.2":
   "integrity" "sha512-7dSzzRQ++CKnNI/krKnYRV7JKKPUXMEh61soaHKg9mrWEhzFWhFnxPxGl+69cD1Ou63C13NUPCnmIcrvqCuM6w=="
