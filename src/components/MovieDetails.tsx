@@ -47,7 +47,11 @@ export const MovieDetails = ({ movieFull, cast}: Props) => {
                 Sinopsis
             </Text>
             <Text style={{fontSize: 16}}>
-                {movieFull.overview}
+                {
+                    movieFull.overview === ''
+                    ? 'No indicada'
+                    : movieFull.overview
+                }
             </Text>
 
             {/* Sinopsis */}
@@ -56,14 +60,18 @@ export const MovieDetails = ({ movieFull, cast}: Props) => {
                 Presupuesto
             </Text>
             <Text style={{fontSize: 18}}>
-                {currencyFormater.format(movieFull.budget, {code: 'USD'})}
+                {
+                    movieFull.budget == 0
+                    ? 'No indicado'
+                    : currencyFormater.format(movieFull.budget, {code: 'USD'})
+                }
             </Text>
 
 
         </View>
 
         {/* Reparto */}
-        <View style={{marginTop: 10, marginBottom: 100}}>
+        <View style={{marginTop: 10, marginBottom: 25}}>
             <Text style={{...styles.title, marginHorizontal: 20}}>Actores</Text>
             {/* <CastCard actor={cast[0]} /> */}
 
